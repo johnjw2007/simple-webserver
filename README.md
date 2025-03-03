@@ -23,9 +23,55 @@ Testing the webserver.
 
 ## PROGRAM:
 
+'''html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>96th table</title>
+</head>
+<body>
+    <h1>Bio data</h1>
+    <table border = "1">
+        <tr>
+            <th>Name</th>
+            <th>Register Number</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>John Wilfred Thomas J W</td>
+            <td>212224040141</td>
+            <td>CSE</td>
+        </tr>
+    </table>
+    <h2>Table of 96:</h2>
+    <p>96 x 1 = 96</p>
+    <p>96 x 2 = 192</p>
+    <p>96 x 3 = 288</p>
+    <p>96 x 4 = 384</p>
+    <p>96 x 5 = 480</p>
+    <p>96 x 6 = 576</p>
+    <p>96 x 7 = 672</p>
+    <p>96 x 8 = 768</p>
+    <p>96 x 9 = 864</p>
+    <p>96 x 10 = 960</p>
+    <p>96 x 11 = 1056</p>
+    <p>96 x 12 = 1152</p>
+    <p>96 x 13 = 1248</p>
+    <p>96 x 14 = 1344</p>
+    <p>96 x 15 = 1440</p>
+    <p>96 x 16 = 1536</p>
+    <p>96 x 17 = 1632</p>
+    <p>96 x 18 = 1728</p>
+    <p>96 x 19 = 1824</p>
+    <p>96 x 20 = 1920</p>
+</body>
+</html>
+'''
 
 ## OUTPUT:
-
+![Output](static/Screenshot%20(2).png)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
