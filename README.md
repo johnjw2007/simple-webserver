@@ -23,7 +23,7 @@ Testing the webserver.
 
 ## PROGRAM:
 
-'''html 
+``` 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +68,7 @@ Testing the webserver.
     <p>96 x 20 = 1920</p>
 </body>
 </html>
-'''
+```
 
 ## OUTPUT:
 ![Output](static/Screenshot%20(2).png)
