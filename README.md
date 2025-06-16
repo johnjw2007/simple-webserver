@@ -24,50 +24,29 @@ Testing the webserver.
 ## PROGRAM:
 
 ``` 
+from http.server import HTTPServer, BaseHTTPRequestHandler
+content = """
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>96th table</title>
+<title>My webserver</title>
 </head>
 <body>
-    <h1>Bio data</h1>
-    <table border = "1">
-        <tr>
-            <th>Name</th>
-            <th>Register Number</th>
-            <th>Department</th>
-        </tr>
-        <tr>
-            <td>John Wilfred Thomas J W</td>
-            <td>212224040141</td>
-            <td>CSE</td>
-        </tr>
-    </table>
-    <h2>Table of 96:</h2>
-    <p>96 x 1 = 96</p>
-    <p>96 x 2 = 192</p>
-    <p>96 x 3 = 288</p>
-    <p>96 x 4 = 384</p>
-    <p>96 x 5 = 480</p>
-    <p>96 x 6 = 576</p>
-    <p>96 x 7 = 672</p>
-    <p>96 x 8 = 768</p>
-    <p>96 x 9 = 864</p>
-    <p>96 x 10 = 960</p>
-    <p>96 x 11 = 1056</p>
-    <p>96 x 12 = 1152</p>
-    <p>96 x 13 = 1248</p>
-    <p>96 x 14 = 1344</p>
-    <p>96 x 15 = 1440</p>
-    <p>96 x 16 = 1536</p>
-    <p>96 x 17 = 1632</p>
-    <p>96 x 18 = 1728</p>
-    <p>96 x 19 = 1824</p>
-    <p>96 x 20 = 1920</p>
+<h1>Welcome<h1>
 </body>
 </html>
+"""
+class myhandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("request received")
+        self.send_response(200)
+        self.send_header('content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+server_address = ('',80)
+httpd = HTTPServer(server_address,myhandler)
+print("my webserver is running...")
+httpd.serve_forever()
 ```
 
 ## OUTPUT:
